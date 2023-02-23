@@ -1,0 +1,25 @@
+
+  @font-face {
+	font-family: icons;
+	font-display: swap;
+	src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: arialnarrow;
+	font-display: swap;
+	src: url("../fonts/arialnarrow.woff2") format("woff2"), url("../fonts/arialnarrow.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: arialnarrow_bold;
+	font-display: swap;
+	src: url("../fonts/arialnarrow_bold.woff2") format("woff2"), url("../fonts/arialnarrow_bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
