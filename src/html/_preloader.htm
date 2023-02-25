@@ -50,18 +50,18 @@
 			flex-direction: column;
 		}
 		/* Блок з лічильником */
-		.fls-preloader__counter{
-			font-size: 10rem;
-		}
+		/* .fls-preloader__counter{
+			font-size: 200rem;
+		} */
 		/* Прогресбар */
 		.fls-preloader__line{}
 		/* Лінія прогресбару */
-		.fls-preloader__line span{
+		/* .fls-preloader__line span{
 			display: inline-block;
 			transition: width 0.2s ease;
 			height: 0.8rem;
 			background-color: #7A956B;
-		}
+		} */
 	</style>
 	<!-- Скріпт прелоадера -->
 	<script>
@@ -70,10 +70,9 @@
 			const preloaderContainer = document.querySelector('#fls-preloader');
 			if (preloaderImages.length) {
 				const preloaderTemplate =`
-					<div class="fls-preloader">
+				<div class="fls-preloader">
 						<div class="fls-preloader__body">
-							<div class="fls-preloader__counter">0%</div>
-							<div class="fls-preloader__line"><span></span></div>
+							<img src="@img/logo.svg" class="fls-preloader__counter">
 						</div>
 					</div>`;
 				document.querySelector('html').insertAdjacentHTML("beforeend",preloaderTemplate);
