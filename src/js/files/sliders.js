@@ -7,7 +7,7 @@
 // Підключаємо слайдер Swiper з node_modules
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Parallax } from 'swiper';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay, 
@@ -19,9 +19,9 @@ EffectFade, Lazy, Manipulation
 // Базові стилі
 import "../../scss/base/swiper.scss";
 // Повний набір стилів з scss/libs/swiper.scss
-// import "../../scss/libs/swiper.scss";
+import "../../scss/libs/swiper.scss";
 // Повний набір стилів з node_modules
-// import 'swiper/css';
+import 'swiper/css';
 
 // Ініціалізація слайдерів
 function initSliders() {
@@ -32,15 +32,16 @@ function initSliders() {
 		new Swiper('.swiper', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation],
+			modules: [Navigation, Parallax],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 0,
 			autoHeight: true,
-			speed: 800,
+			speed: 700,
+			parallax: true,
 
-			//touchRatio: 0,
+			// touchRatio: 0,
 			//simulateTouch: false,
 			//loop: true,
 			//preloadImages: false,
@@ -56,12 +57,12 @@ function initSliders() {
 			*/
 
 			// Пагінація
-			/*
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			*/
+			
+			// pagination: {
+			// 	el: '.swiper-pagination',
+			// 	clickable: true,
+			// },
+			
 
 			// Скроллбар
 			/*
