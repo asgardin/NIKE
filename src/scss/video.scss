@@ -1,0 +1,23 @@
+.page {
+
+    // .page__video
+
+    &__video {
+    }
+}
+.video {
+    @include adaptiveValue("margin-bottom", 80, 40);
+
+    // .video__container
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    // .video__contant
+
+    &__item {
+        max-width: 100%;
+    }
+}
